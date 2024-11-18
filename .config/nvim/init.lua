@@ -36,7 +36,7 @@ vim.keymap.set('n', '<c-right>', '<c-w><')
 vim.keymap.set('n', '<esc><BS>', ':bprev<enter>')
 vim.keymap.set('n', '<esc><TAB>', ':bnext<enter>')
 
-vim.opt.undodir = '.vim/backup'
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 vim.opt.undoreload = 10000
 
